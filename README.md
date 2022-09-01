@@ -10,27 +10,27 @@
 
 We assume the user set the default directory at **beluga** at Compute Canada
 ~~~
-    [DAISM]  
+    [Tumor_Survival_CV]  
 ~~~
-all codes are in the subdirectory directory at **daism** -- it is recommended to not change the name of directory because **daism** folder is used in the code and if you change the name you should also change the name of this folder in several places of the main and module codes.
+all codes are in the subdirectory directory at **Tumor_Survival_CV**
 ~~~
-    [DAISM]/daism 
+    [Tumor_Survival_CV]/Scripts 
 ~~~
-all the .sh files that run the R files are in the subdirectory directory at **sh** 
+all the .sh files that run the python files are in the subdirectory directory at **sh** 
 ~~~
-    [DAISM]/sh  
+    [Tumor_Survival_CV]/sh  
 ~~~
 all the log files are in the subdirectory directory at **rout** 
 ~~~
-    [DAISM]/rout  
+    [Tumor_Survival_CV]/rout  
 ~~~
 all the final results/intermedia results are in the subdirectory directory at **outputs**
 ~~~
-    [DAISM]/outputs  
+    [Tumor_Survival_CV]/Results  
 ~~~
 all the **data** from Schelker are stored at the directory bellow, which are accessible to all group members
 ~~~
-    [DAISM]/data 
+    [Tumor_Survival_CV]/Data 
 ~~~
 
 <details><summary>scripts</summary>
@@ -89,24 +89,24 @@ all the **data** from Schelker are stored at the directory bellow, which are acc
 ---
 ## Notice
 
-As all the processes are conducted using the relative path, it's very important to set up [DAISM] and use it correctly. 
-[DAISM] should be consisted of three parts: part 1 is ```/project/6003851/``` to ensure all the files can run on Compute Canada; part 2 is your ```user name``` at Compute Canada; part 3 is your ```folder's name```. For example, the writer's directory is as follows:
+As all the processes are conducted using the relative path, it's very important to set up [Tumor_Survival_CV] and use it correctly. 
+[Tumor_Survival_CV] should be consisted of three parts: part 1 is ```/project/6003851/``` to ensure all the files can run on Compute Canada; part 2 is your ```user name``` at Compute Canada; part 3 is your ```folder's name```. For example, the writer's directory is as follows:
 
 ~~~
-/project/6003851/elhma/DAISM
+/project/6003851/elhma/Tumor_Survival_CV
 ~~~
 
 If you are not sure about the path of your working folder, try to type in 'pwd' command in linux or 'getwd()' in R language for reference. 
 
 ---
 ## Before you start
-1. decide the path of [DAISM] to replicate our results;
+1. decide the path of [Tumor_Survival_CV] to replicate our results;
 2. create the subdirectories **scripts**, **sh**, **rout**, and **outputs** at [DAISM]；
 3. allocate all relevant files into each subdirectory. The **rout**, and **outputs** folders will be empty at the beginning while the **scripts** and **sh** folders should look like the figure below:
 
 ![image](image1.png)
 
-5. In the main directory [DAISM], use the following commands to python/3.8  language in Compute Canada (The environment settings in CC change occasionally, make sure to check and use their latest settings):
+5. In the main directory [Tumor_Survival_CV], use the following commands to python/3.8  language in Compute Canada (The environment settings in CC change occasionally, make sure to check and use their latest settings):
 ~~~
 module load python/3.8
 source $HOME/jupyter_py3/bin/activate
