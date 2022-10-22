@@ -186,9 +186,9 @@ pip install pandas
 
 <details><summary>3.BestCutOff (40 min)</summary>
 
-- read the outputs of simulation module;
+- reading the predcition outputs of models reached by running Main.sh;
 
-- split data to train, test and DAISM model;
+- detecting the best predcitive models and their best cut offs;
 
 
 </details>
@@ -199,9 +199,9 @@ pip install pandas
 
 <details><summary>4.Mean.py </summary>
 
-- read in the outputs of training moduel and test.txt;
+- reading the Main.sh and BestCutOff.sh outputs;
 
-- predict the estimated proportion;
+- calculating the mean of coefficients of eact feature comes from selected predictive models;
 
 
 </details>
@@ -212,9 +212,9 @@ pip install pandas
 
 <details><summary>5.OS.py </summary>
 
-- read in the outputs of training moduel and test.txt;
+- reading the outputs of by running Mean.sh and Main.sh;
 
-- predict the estimated proportion;
+- computing Kaplan-Meier Curve for each dataset;
 
 
 </details>
