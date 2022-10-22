@@ -152,17 +152,17 @@ pip install pandas
 
 <details><summary>1. Datasets.py (20 min)</summary>
 
-- read dataset downloaded from https://data.projectdatasphere.org/projectdatasphere/html/access;
+- reading dataset downloaded from https://data.projectdatasphere.org/projectdatasphere/html/access;
 
-    - made a dataframe of baseline characteristics of patients;
+    - building a dataframe of baseline characteristics of patients;
 
-    - made a dataframe of PCA of the dynamic tumor size for the early four visits;
+    - building a dataframe of PCA of the dynamic tumor size for the early four visits;
 	
-    - made a dataframe of Overall Survival;
+    - building a dataframe of Overall Survival;
 
-    - made a dataframe of Best Overall Response;
+    - building a dataframe of Best Overall Response;
 
-    - made a merged dataframe from all features;	
+    - building a merged dataframe from all features;	
 
  </details>
  
@@ -184,7 +184,7 @@ pip install pandas
 ~~~
 
 
-<details><summary>2.daism.py Generic_training (40 min)</summary>
+<details><summary>3.BestCutOff (40 min)</summary>
 
 - read the outputs of simulation module;
 
@@ -194,10 +194,10 @@ pip install pandas
 </details>
 
 ~~~
-    sbatch ./sh/training.sh
+    sbatch ./sh/BestCutOff.sh
 ~~~
 
-<details><summary>2.daism.py Generic_prediction </summary>
+<details><summary>4.Mean.py </summary>
 
 - read in the outputs of training moduel and test.txt;
 
@@ -207,8 +207,23 @@ pip install pandas
 </details>
 
 ~~~
-    sbatch ./sh/prediction.sh
+    sbatch ./sh/Mean.sh
 ~~~
+
+<details><summary>5.OS.py </summary>
+
+- read in the outputs of training moduel and test.txt;
+
+- predict the estimated proportion;
+
+
+</details>
+
+~~~
+    sbatch ./sh/OS.sh
+~~~
+
+
 
 
 
