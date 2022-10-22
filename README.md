@@ -154,15 +154,15 @@ pip install pandas
 
 - reading dataset downloaded from https://data.projectdatasphere.org/projectdatasphere/html/access;
 
-    - building a dataframe of baseline characteristics of patients;
+- building a dataframe of baseline characteristics of patients;
 
-    - building a dataframe of PCA of the dynamic tumor size for the early four visits;
+- building a dataframe of PCA of the dynamic tumor size for the early four visits;
 	
-    - building a dataframe of Overall Survival;
+- building a dataframe of Overall Survival;
 
-    - building a dataframe of Best Overall Response;
+- building a dataframe of Best Overall Response;
 
-    - building a merged dataframe from all features;	
+- building a merged dataframe from all features;	
 
  </details>
  
