@@ -2,7 +2,7 @@
 ---
 ## About The Project
 
-
+This study confirms that the CV technique has significant impact on the accuracy of prediction probability of BOR. Thus, it is important to find and apply the optimal CV technique to build the predictive models. The results of this study shows, although, the datasets may have similar pre-processing, the same features, and data types but different size of data. The optimal CV technique to predict the probability of BOR is not the same. This study carried out to explore whether one specific CV technique can be get the most accurate predictions and segmentation of patients on clinical trials. In many previous studies, one specific CV technique was applied without explanations about the reasons of selection or testing other CV techniques. Using inappropriate CV technique can negative impact on the predictions and segmentations patients. It can be very vital in real clinical practice to predict the probability of clinical trials feature accurately. The results revealed that the best CV technique is uncertain in practice. Thus, it is important to try to consider the performance of different CV technique on clinical trials. In this study, a general model contains seven main CV techniques, in addition, the Nested CV technique were used to select the best prediction probability of BOR and segment the patients based on scores and best cut of that reached from the best performance of predictive models and then the CV technique were resulted in best performance were selected as the optimal CV technique. 
 
 ---
 ## Directory Layout
