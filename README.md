@@ -152,29 +152,35 @@ pip install pandas
 
 <details><summary>1. Datasets.py (20 min)</summary>
 
-- read annotation and Sc_RNAseq;
+- read dataset downloaded from https://data.projectdatasphere.org/projectdatasphere/html/access;
 
-    - match the celltypes bewteen annotation and Sc_RNAseq;
+    - made a dataframe of baseline characteristics of patients;
 
-    - build purified.h5ad;
+    - made a dataframe of PCA of the dynamic tumor size for the early four visits;
+	
+    - made a dataframe of Overall Survival;
 
+    - made a dataframe of Best Overall Response;
+
+    - made a merged dataframe from all features;	
 
  </details>
  
  ~~~
-    sbatch ./sh/create_h5ad.sh
+    sbatch ./sh/Dataset.sh
 ~~~
 
 
-<details><summary>2.daism.py Generic_simulation (50 min)</summary>
+<details><summary>2.Main.py (50 min)</summary>
 
-- read the purified.h5ad;
-
+- running the seven CV techniques and Nested CV techniques using the merged dataframe comesd from Dataset.sh;
+	
+- saving all results in csv files by running Output.py;
 
 </details>
 
 ~~~
-    sbatch ./sh/simulation.sh
+    sbatch ./sh/Main.sh
 ~~~
 
 
