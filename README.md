@@ -36,12 +36,26 @@ all the **data** from Schelker are stored at the directory bellow, which are acc
 <details><summary>scripts</summary>
 
     ├── scripts  
-    │    ├── create_h5ad.py		    # build purified.h5ad which is the purified dataset for data augmentation
-    │ 	 ├── daism.py 		# main code using the all modules
-    │ 	 ├── _int.py			        # import pkg_resources
-    │ 	 ├── simulation.py			# Build simulation using test and purified.h5ad 
-    │ 	 ├── training.py			# Split data to train and test   
-    │ 	 └── prediction.py			# Predict the estimated proportion				
+    │    ├── Datasets.py		    # Making dataframes for building the predcitive models
+    │ 	 ├── Main.py 		# main code using to build the predictive models 
+    │ 	 ├── HouldOut.py			        # import pkg_resources
+    │ 	 ├── HouldOut_M2.py			# Build simulation using test and purified.h5ad 
+    │ 	 ├── LOOCV.py			# Split data to train and test   
+    │ 	 ├── LOOCV_M2.py			        # import pkg_resources
+    │ 	 ├── LpOCV.py			# Build simulation using test and purified.h5ad 
+    │ 	 ├── LpOCV_M2.py			# Split data to train and test 
+    │ 	 ├── KFold.py			        # import pkg_resources
+    │ 	 ├── KFold_M2.py			# Build simulation using test and purified.h5ad 
+    │ 	 ├── StratifiedKFold.py			# Split data to train and test
+    │ 	 ├── StratifiedKFold_M2.py			# Build simulation using test and purified.h5ad 
+    │ 	 ├── RepeatedKFold.py			# Split data to train and test 
+    │ 	 ├── RepeatedKFold_M2.py			        # import pkg_resources
+    │ 	 ├── RepeatedStratifiedKFold.py			# Build simulation using test and purified.h5ad 
+    │ 	 ├── RepeatedStratifiedKFold_M2.py			# Split data to train and test
+    │ 	 ├── Outputs.py			# Build simulation using test and purified.h5ad 
+    │ 	 ├── Select_Best_Cutoff.py			# Split data to train and test
+    │ 	 ├── Mean.py			# Split data to train and test
+    │ 	 └── OS.py			# Predict the estimated proportion				
 </details>
 <details><summary>sh</summary>
 
