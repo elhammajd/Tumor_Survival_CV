@@ -36,33 +36,33 @@ all the **data** from Schelker are stored at the directory bellow, which are acc
 <details><summary>scripts</summary>
 
     ├── scripts  
-    │ 	 ├── Datasets.py	# Making dataframes for building the predcitive models
-    │ 	 ├── Main.py 		# main code using to build the predictive models 
-    │ 	 ├── HouldOut.py	# import pkg_resources
-    │ 	 ├── HouldOut_M2.py		# Build simulation using test and purified.h5ad 
-    │ 	 ├── LOOCV.py			# Split data to train and test   
-    │ 	 ├── LOOCV_M2.py		# import pkg_resources
-    │ 	 ├── LpOCV.py			# Build simulation using test and purified.h5ad 
-    │ 	 ├── LpOCV_M2.py		# Split data to train and test 
-    │ 	 ├── KFold.py			# import pkg_resources
-    │ 	 ├── KFold_M2.py		# Build simulation using test and purified.h5ad 
-    │ 	 ├── StratifiedKFold.py			# Split data to train and test
-    │ 	 ├── StratifiedKFold_M2.py		# Build simulation using test and purified.h5ad 
-    │ 	 ├── RepeatedKFold.py			# Split data to train and test 
-    │ 	 ├── RepeatedKFold_M2.py		# import pkg_resources
-    │ 	 ├── RepeatedStratifiedKFold.py			# Build simulation using test and purified.h5ad 
-    │ 	 ├── RepeatedStratifiedKFold_M2.py		# Split data to train and test
-    │ 	 ├── Outputs.py			# Build simulation using test and purified.h5ad 
-    │ 	 ├── Select_Best_Cutoff.py		# Split data to train and test
-    │ 	 ├── Mean.py		# Split data to train and test
-    │ 	 └── OS.py			# Predict the estimated proportion				
+    │ 	 ├── Datasets.py	                 # Making dataframes for building the predcitive models
+    │ 	 ├── Main.py 		                 # main code using to build the predictive models 
+    │ 	 ├── HouldOut.py	                 # import pkg_resources
+    │ 	 ├── HouldOut_M2.py		         # Build simulation using test and purified.h5ad 
+    │ 	 ├── LOOCV.py			         # Split data to train and test   
+    │ 	 ├── LOOCV_M2.py		         # import pkg_resources
+    │ 	 ├── LpOCV.py			         # Build simulation using test and purified.h5ad 
+    │ 	 ├── LpOCV_M2.py		         # Split data to train and test 
+    │ 	 ├── KFold.py			         # import pkg_resources
+    │ 	 ├── KFold_M2.py		         # Build simulation using test and purified.h5ad 
+    │ 	 ├── StratifiedKFold.py		         # Split data to train and test
+    │ 	 ├── StratifiedKFold_M2.py	         # Build simulation using test and purified.h5ad 
+    │ 	 ├── RepeatedKFold.py		         # Split data to train and test 
+    │ 	 ├── RepeatedKFold_M2.py	         # import pkg_resources
+    │ 	 ├── RepeatedStratifiedKFold.py		 # Build simulation using test and purified.h5ad 
+    │ 	 ├── RepeatedStratifiedKFold_M2.py	 # Split data to train and test
+    │ 	 ├── Outputs.py			         # Build simulation using test and purified.h5ad 
+    │ 	 ├── Select_Best_Cutoff.py		 # Split data to train and test
+    │ 	 ├── Mean.py		                 # Split data to train and test
+    │ 	 └── OS.py			         # Predict the estimated proportion				
 </details>
 <details><summary>sh</summary>
     
     ├── sh  
     │ 	 ├── Dataset.sh		# sh.file to run Datasets.py
     │ 	 ├── Main.sh		# sh.file to run Main.py, HoldOut.py, HoldOut_M2, and ...
-    │ 	 ├── BestCutOff.sh		# sh.file to run Select_Best_Cutoff.py
+    │ 	 ├── BestCutOff.sh	# sh.file to run Select_Best_Cutoff.py
     │ 	 ├── Mean.sh		# sh.file to run Mean.py
     │ 	 └── OS.sh		# sh.file to run OS.py		
 		
@@ -72,7 +72,7 @@ all the **data** from Schelker are stored at the directory bellow, which are acc
     ├── rout  
     │ 	 ├── Dataset.sh		# log.file from Dataset.sh
     │ 	 ├── Main.sh		# log.file from Main.sh
-    │ 	 ├── BestCutOff.sh		# log.file from BestCutOff.sh
+    │ 	 ├── BestCutOff.sh	# log.file from BestCutOff.sh
     │ 	 ├── Mean.sh		# log.file from Mean.sh
     │ 	 └── OS.sh		# log.file from OS.sh	
 	
@@ -80,35 +80,35 @@ all the **data** from Schelker are stored at the directory bellow, which are acc
 <details><summary>outputs (final & intermedia results)</summary>
 
     ├──  intermedia result
-    │ 	 ├── Coefs_NCT02499770.csv	# sh.file to run Datasets.py
-    │ 	 ├── Coefs_NCT02514447.csv	# sh.file to run Main.py, HoldOut.py, HoldOut_M2, and ...
-    │ 	 ├── Coefs_NCT03041311.csv	# sh.file to run Select_Best_Cutoff.py
-    │ 	 ├── Best_Cutoff_NCT02499770.csv	# sh.file to run Mean.py
-    │ 	 ├── Best_Cutoff_NCT02514447.csv	# sh.file to run Select_Best_Cutoff.py
-    │ 	 ├── Best_Cutoff_NCT03041311.csv	# sh.file to run Select_Best_Cutoff.py
+    │ 	 ├── Coefs_NCT02499770.csv	        # Coefficient of each feature for each predictive model on NCT02499770 
+    │ 	 ├── Coefs_NCT02514447.csv	        # Coefficient of each feature for each predictive model on NCT02514447
+    │ 	 ├── Coefs_NCT03041311.csv	        # Coefficient of each feature for each predictive model on NCT03041311
+    │ 	 ├── Best_Cutoff_NCT02499770.csv	# Best cut offs of predictive models for NCT02499770
+    │ 	 ├── Best_Cutoff_NCT02514447.csv	# Best cut offs of predictive models for NCT02514447
+    │ 	 ├── Best_Cutoff_NCT03041311.csv	# Best cut offs of predictive models for NCT03041311
     ├──  final result     
-    │ 	 ├── Performance_NCT02499770.csv	# 
-    │ 	 ├── Performance_NCT02514447.csv	# sh.file to run Main.py, HoldOut.py, HoldOut_M2, and ...
-    │ 	 ├── Performance_NCT03041311.csv	# sh.file to run Select_Best_Cutoff.py
-    │ 	 ├── Result_NCT02499770.csv	# sh.file to run Mean.py
-    │ 	 ├── Result_NCT02514447.csv	# sh.file to run Select_Best_Cutoff.py
-    │ 	 ├── Result_NCT03041311.csv	# sh.file to run Select_Best_Cutoff.py
-    │ 	 ├── Summary_NCT02499770.csv	# sh.file to run Main.py, HoldOut.py, HoldOut_M2, and ...
-    │ 	 ├── Summary_NCT02514447.csv	# sh.file to run Select_Best_Cutoff.py
-    │ 	 ├── Summary_NCT03041311.csv	# sh.file to run Mean.py
-    │ 	 ├── Confusion_Matrix_NCT02499770.csv	# sh.file to run Mean.py
-    │ 	 ├── Confusion_Matrix_NCT02514447.csv	# sh.file to run Select_Best_Cutoff.py
-    │ 	 ├── Confusion_Matrix_NCT03041311.csv	# sh.file to run Select_Best_Cutoff.py
-    │ 	 ├── Time_NCT02499770.csv	# sh.file to run Mean.py
-    │ 	 ├── Time_NCT02514447.csv	# sh.file to run Select_Best_Cutoff.py
-    │ 	 └── Time_NCT03041311.csv	# 
+    │ 	 ├── Performance_NCT02499770.csv	# Performance of predictive models for NCT02499770
+    │ 	 ├── Performance_NCT02514447.csv	# Performance of predictive models for NCT02514447
+    │ 	 ├── Performance_NCT03041311.csv	# Performance of predictive models for NCT03041311
+    │ 	 ├── Result_NCT02499770.csv	        # Result of predictive models for NCT02499770
+    │ 	 ├── Result_NCT02514447.csv             # Result of predictive models for NCT02514447
+    │ 	 ├── Result_NCT03041311.csv	        # Result of predictive models for NCT03041311
+    │ 	 ├── Summary_NCT02499770.csv	        # Summary of predictive models for NCT02499770
+    │ 	 ├── Summary_NCT02514447.csv	        # Summary of predictive models for NCT02514447
+    │ 	 ├── Summary_NCT03041311.csv	        # Summary of predictive models for NCT03041311
+    │ 	 ├── Confusion_Matrix_NCT02499770.csv	# Confusion Matrix of predictive models for NCT02499770
+    │ 	 ├── Confusion_Matrix_NCT02514447.csv	# Confusion Matrix of predictive models for NCT02514447
+    │ 	 ├── Confusion_Matrix_NCT03041311.csv	# Confusion Matrix of predictive models for NCT03041311
+    │ 	 ├── Time_NCT02499770.csv	        # Time of running predictive models for NCT02499770
+    │ 	 ├── Time_NCT02514447.csv	        # Time of running predictive models for NCT02514447
+    │ 	 └── Time_NCT03041311.csv	        # Time of running predictive models for NCT03041311
 </details>
 <details><summary>data</summary>
 	    
     ├── data
-    │ 	 ├── NCT02499770	# 
-    │ 	 ├── NCT02514447	# 
-    │ 	 └── NCT03041311	# 
+    │ 	 ├── NCT02499770	# Small Cell Lung Cancer dataset, downloaded from https://data.projectdatasphere.org/projectdatasphere/html/access
+    │ 	 ├── NCT02514447	# Small Cell Lung Cancer dataset, downloaded from https://data.projectdatasphere.org/projectdatasphere/html/access
+    │ 	 └── NCT03041311	# Small Cell Lung Cancer dataset, downloaded from https://data.projectdatasphere.org/projectdatasphere/html/access
  
 </details>
 
