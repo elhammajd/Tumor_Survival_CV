@@ -36,42 +36,46 @@ all the **data** from Schelker are stored at the directory bellow, which are acc
 <details><summary>scripts</summary>
 
     ├── scripts  
-    │    ├── Datasets.py		    # Making dataframes for building the predcitive models
+    │ 	 ├── Datasets.py	# Making dataframes for building the predcitive models
     │ 	 ├── Main.py 		# main code using to build the predictive models 
-    │ 	 ├── HouldOut.py			        # import pkg_resources
-    │ 	 ├── HouldOut_M2.py			# Build simulation using test and purified.h5ad 
+    │ 	 ├── HouldOut.py	# import pkg_resources
+    │ 	 ├── HouldOut_M2.py		# Build simulation using test and purified.h5ad 
     │ 	 ├── LOOCV.py			# Split data to train and test   
-    │ 	 ├── LOOCV_M2.py			        # import pkg_resources
+    │ 	 ├── LOOCV_M2.py		# import pkg_resources
     │ 	 ├── LpOCV.py			# Build simulation using test and purified.h5ad 
-    │ 	 ├── LpOCV_M2.py			# Split data to train and test 
-    │ 	 ├── KFold.py			        # import pkg_resources
-    │ 	 ├── KFold_M2.py			# Build simulation using test and purified.h5ad 
+    │ 	 ├── LpOCV_M2.py		# Split data to train and test 
+    │ 	 ├── KFold.py			# import pkg_resources
+    │ 	 ├── KFold_M2.py		# Build simulation using test and purified.h5ad 
     │ 	 ├── StratifiedKFold.py			# Split data to train and test
-    │ 	 ├── StratifiedKFold_M2.py			# Build simulation using test and purified.h5ad 
+    │ 	 ├── StratifiedKFold_M2.py		# Build simulation using test and purified.h5ad 
     │ 	 ├── RepeatedKFold.py			# Split data to train and test 
-    │ 	 ├── RepeatedKFold_M2.py			        # import pkg_resources
+    │ 	 ├── RepeatedKFold_M2.py		# import pkg_resources
     │ 	 ├── RepeatedStratifiedKFold.py			# Build simulation using test and purified.h5ad 
-    │ 	 ├── RepeatedStratifiedKFold_M2.py			# Split data to train and test
+    │ 	 ├── RepeatedStratifiedKFold_M2.py		# Split data to train and test
     │ 	 ├── Outputs.py			# Build simulation using test and purified.h5ad 
-    │ 	 ├── Select_Best_Cutoff.py			# Split data to train and test
-    │ 	 ├── Mean.py			# Split data to train and test
+    │ 	 ├── Select_Best_Cutoff.py		# Split data to train and test
+    │ 	 ├── Mean.py		# Split data to train and test
     │ 	 └── OS.py			# Predict the estimated proportion				
 </details>
 <details><summary>sh</summary>
-
+    
     ├── sh  
-    │    ├── create_h5ad.sh		# sh.file to run create_h5ad.py
-    │ 	 ├── simulation.sh		# sh.files to run simulation.py
-    │    ├── training.sh		# sh.files to run training.py
-    │ 	 └── prediction.sh		# sh.files to run prediction.py 		
+    │ 	 ├── Dataset.sh		# sh.file to run Datasets.py
+    │ 	 ├── Main.sh		# sh.file to run Main.py, HoldOut.py, HoldOut_M2, and ...
+    │ 	 ├── BestCutOff.sh		# sh.file to run Select_Best_Cutoff.py
+    │ 	 ├── Mean.sh		# sh.file to run Mean.py
+    │ 	 └── OS.sh		# sh.file to run OS.py		
+		
 </details>
 <details><summary>rout</summary>
-
-    ├── rout 
-    │    ├── create_h5ad.rout		# log.file for create_h5ad.sh
-    │ 	 ├── simulation.rout		# log.file for simulation.sh
-    │    ├── training.rout		# log.file for training.sh
-    │ 	 └── prediction.rout		# log.file for prediction.sh 
+        
+    ├── rout  
+    │ 	 ├── Dataset.sh		# log.file from Dataset.sh
+    │ 	 ├── Main.sh		# log.file from Main.sh
+    │ 	 ├── BestCutOff.sh		# log.file from BestCutOff.sh
+    │ 	 ├── Mean.sh		# log.file from Mean.sh
+    │ 	 └── OS.sh		# log.file from OS.sh	
+	
 </details>
 <details><summary>outputs (final & intermedia results)</summary>
 
@@ -90,14 +94,9 @@ all the **data** from Schelker are stored at the directory bellow, which are acc
 <details><summary>data</summary>
     
     ├── data
-    │        ├── Schelker_scRNA_updated.tsv
-    │        ├── trainp1p2.tsv		
-    │        ├── trainp1p3.tsv			
-    │        ├── trainp2p3.tsv	 	
-    │        ├── bulk-schelker.tsv
-    │        ├── bulkp1.tsv		
-    │        ├── bulkp2.tsv		
-    │	     └── bulkp3.tsv 
+    │        ├── NCT02499770		
+    │        ├── NCT02514447				
+    │	     └── NCT03041311 
 </details>
 
 ---
