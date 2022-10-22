@@ -80,16 +80,28 @@ all the **data** from Schelker are stored at the directory bellow, which are acc
 <details><summary>outputs (final & intermedia results)</summary>
 
     ├──  intermedia result
-    │    ├── purified.h5ad		    # it is the purified dataset for data augmentation
-    │ 	 ├── Generic_mixfra 	# from simulation
-    │    ├── Generic_mixsam.txt			# from simulation
-    │    ├── Generic_celltypes.txt			# from simulation
-    │    ├── Generic_celltypes.txt			# from simulation
-    │ 	 ├── DAISM_model.pkl 	# from training
-    │ 	 ├── DAISM_model_celltypes			# from training
-    │ 	 ├── output/DAISM_model_feature.txt 	# from training
+    │ 	 ├── Coefs_NCT02499770.csv	# sh.file to run Datasets.py
+    │ 	 ├── Coefs_NCT02514447.csv	# sh.file to run Main.py, HoldOut.py, HoldOut_M2, and ...
+    │ 	 ├── Coefs_NCT03041311.csv	# sh.file to run Select_Best_Cutoff.py
+    │ 	 ├── Best_Cutoff_NCT02499770.csv	# sh.file to run Mean.py
+    │ 	 ├── Best_Cutoff_NCT02514447.csv	# sh.file to run Select_Best_Cutoff.py
+    │ 	 ├── Best_Cutoff_NCT03041311.csv	# sh.file to run Select_Best_Cutoff.py
     ├──  final result     
-    │ 	 └── *.txt			# The final prediction results in txt but Schelker datasets could not get the final results 
+    │ 	 ├── Performance_NCT02499770.csv	# 
+    │ 	 ├── Performance_NCT02514447.csv	# sh.file to run Main.py, HoldOut.py, HoldOut_M2, and ...
+    │ 	 ├── Performance_NCT03041311.csv	# sh.file to run Select_Best_Cutoff.py
+    │ 	 ├── Result_NCT02499770.csv	# sh.file to run Mean.py
+    │ 	 ├── Result_NCT02514447.csv	# sh.file to run Select_Best_Cutoff.py
+    │ 	 ├── Result_NCT03041311.csv	# sh.file to run Select_Best_Cutoff.py
+    │ 	 ├── Summary_NCT02499770.csv	# sh.file to run Main.py, HoldOut.py, HoldOut_M2, and ...
+    │ 	 ├── Summary_NCT02514447.csv	# sh.file to run Select_Best_Cutoff.py
+    │ 	 ├── Summary_NCT03041311.csv	# sh.file to run Mean.py
+    │ 	 ├── Confusion_Matrix_NCT02499770.csv	# sh.file to run Mean.py
+    │ 	 ├── Confusion_Matrix_NCT02514447.csv	# sh.file to run Select_Best_Cutoff.py
+    │ 	 ├── Confusion_Matrix_NCT03041311.csv	# sh.file to run Select_Best_Cutoff.py
+    │ 	 ├── Time_NCT02499770.csv	# sh.file to run Mean.py
+    │ 	 ├── Time_NCT02514447.csv	# sh.file to run Select_Best_Cutoff.py
+    │ 	 └── Time_NCT03041311.csv	# 
 </details>
 <details><summary>data</summary>
 	    
@@ -143,7 +155,7 @@ pip install daism   (essential)
 ## Running files (estimated time per job)
 
 
-<details><summary>1. create_h5ad.py	 (10 min)</summary>
+<details><summary>1. Datasets.py (20 min)</summary>
 
 - read annotation and Sc_RNAseq;
 
