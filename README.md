@@ -92,11 +92,12 @@ all the **data** from Schelker are stored at the directory bellow, which are acc
     │ 	 └── *.txt			# The final prediction results in txt but Schelker datasets could not get the final results 
 </details>
 <details><summary>data</summary>
-    
+	    
     ├── data
-    │        ├── NCT02499770		
-    │        ├── NCT02514447				
-    │	     └── NCT03041311 
+    │ 	 ├── NCT02499770	# 
+    │ 	 ├── NCT02514447	# 
+    │ 	 └── NCT03041311	# 
+ 
 </details>
 
 ---
