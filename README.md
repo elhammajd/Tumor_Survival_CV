@@ -135,19 +135,14 @@ If you are not sure about the path of your working folder, try to type in 'pwd' 
 5. In the main directory [Tumor_Survival_CV], use the following commands to python/3.8  language in Compute Canada (The environment settings in CC change occasionally, make sure to check and use their latest settings):
 ~~~
 module load python/3.8
-source $HOME/jupyter_py3/bin/activate
 ~~~
 4. before we run the .sh files, we use in the following commands in to install some packages needed for the task
 ~~~
-apt-get update (recommended)
-apt-get install less (recommended)
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda  (recommended)
-conda install argh  (recommended)
-conda install anndata  (recommended)
-conda install scikit-learn  (recommended)
-pip install scanpy  (essential)
-pip install tqdm   (essential)
-pip install daism   (essential)
+pip install Cython
+pip install pyreadstat
+pip install sklearn
+pip install numpy
+pip install pandas
 ~~~
 
 ---
