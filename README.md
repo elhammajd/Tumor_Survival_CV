@@ -173,7 +173,7 @@ pip install pandas
 
 <details><summary>2.Main.py (12 hours)</summary>
 
-- running the seven CV techniques and Nested CV techniques using the merged dataframe comesd from Dataset.sh;
+- running the seven CV techniques and Nested CV techniques using the merged dataframe reached from Dataset.sh;
 	
 - saving all results in csv files by running Output.py;
 
@@ -201,7 +201,7 @@ pip install pandas
 
 - reading the Main.sh and BestCutOff.sh outputs;
 
-- calculating the mean of coefficients of eact feature comes from selected predictive models;
+- calculating the mean of coefficients of each feature reached from selected predictive models;
 
 
 </details>
@@ -212,7 +212,7 @@ pip install pandas
 
 <details><summary>5.OS.py (30 min)</summary>
 
-- reading the outputs of by running Mean.sh and Main.sh;
+- reading the outputs from running Mean.sh and Main.sh;
 
 - computing Kaplan-Meier Curve for each dataset;
 
