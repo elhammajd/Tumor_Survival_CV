@@ -37,25 +37,25 @@ all the **data** from Schelker are stored at the directory bellow, which are acc
 
     ├── scripts  
     │ 	 ├── Datasets.py	                 # Making dataframes for building the predcitive models
-    │ 	 ├── Main.py 		                 # main code using to build the predictive models 
-    │ 	 ├── HouldOut.py	                 # import pkg_resources
-    │ 	 ├── HouldOut_M2.py		         # Build simulation using test and purified.h5ad 
-    │ 	 ├── LOOCV.py			         # Split data to train and test   
-    │ 	 ├── LOOCV_M2.py		         # import pkg_resources
-    │ 	 ├── LpOCV.py			         # Build simulation using test and purified.h5ad 
-    │ 	 ├── LpOCV_M2.py		         # Split data to train and test 
-    │ 	 ├── KFold.py			         # import pkg_resources
-    │ 	 ├── KFold_M2.py		         # Build simulation using test and purified.h5ad 
-    │ 	 ├── StratifiedKFold.py		         # Split data to train and test
-    │ 	 ├── StratifiedKFold_M2.py	         # Build simulation using test and purified.h5ad 
-    │ 	 ├── RepeatedKFold.py		         # Split data to train and test 
-    │ 	 ├── RepeatedKFold_M2.py	         # import pkg_resources
-    │ 	 ├── RepeatedStratifiedKFold.py		 # Build simulation using test and purified.h5ad 
-    │ 	 ├── RepeatedStratifiedKFold_M2.py	 # Split data to train and test
-    │ 	 ├── Outputs.py			         # Build simulation using test and purified.h5ad 
-    │ 	 ├── Select_Best_Cutoff.py		 # Split data to train and test
-    │ 	 ├── Mean.py		                 # Split data to train and test
-    │ 	 └── OS.py			         # Predict the estimated proportion				
+    │ 	 ├── Main.py 		                 # Main code calling the functions of predictive models outputs
+    │ 	 ├── HouldOut.py	                 # Building predictive method by using HoldOut CV 
+    │ 	 ├── HouldOut_M2.py		         # Building predictive method by using Nested HoldOut CV  
+    │ 	 ├── LOOCV.py			         # Building predictive method by using LOOCV CV   
+    │ 	 ├── LOOCV_M2.py		         # Building predictive method by using Nested LOOCV CV 
+    │ 	 ├── LpOCV.py			         # Building predictive method by using LpOCV CV  
+    │ 	 ├── LpOCV_M2.py		         # Building predictive method by using Nested LpOCV CV  
+    │ 	 ├── KFold.py			         # Building predictive method by KFold CV 
+    │ 	 ├── KFold_M2.py		         # Building predictive method by using Nested KFold CV 
+    │ 	 ├── StratifiedKFold.py		         # Building predictive method by using StratifiedKFold CV 
+    │ 	 ├── StratifiedKFold_M2.py	         # Building predictive method by using Nested StratifiedKFold CV 
+    │ 	 ├── RepeatedKFold.py		         # Building predictive method by using RepeatedKFold CV  
+    │ 	 ├── RepeatedKFold_M2.py	         # Building predictive method by using Nested RepeatedKFold CV 
+    │ 	 ├── RepeatedStratifiedKFold.py		 # Building predictive method by using RepeatedStratifiedKFold CV 
+    │ 	 ├── RepeatedStratifiedKFold_M2.py	 # Building predictive method by using Nested RepeatedStratifiedKFold CV 
+    │ 	 ├── Outputs.py			         # The functions for saving the results of predictive models in csv files 
+    │ 	 ├── Select_Best_Cutoff.py		 # Selecting the best predictive models along with their best cut offs
+    │ 	 ├── Mean.py		                 # Calculating the mean of coefficient of features from selected predictive models
+    │ 	 └── OS.py			         # Computing Kaplan-Meier Curve according to selected predictive models				
 </details>
 <details><summary>sh</summary>
     
