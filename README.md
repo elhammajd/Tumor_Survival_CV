@@ -127,7 +127,7 @@ If you are not sure about the path of your working folder, try to type in 'pwd' 
 ---
 ## Before you start
 1. decide the path of [Tumor_Survival_CV] to replicate our results;
-2. create the subdirectories **scripts**, **sh**, **rout**, and **outputs** at [DAISM]；
+2. create the subdirectories **scripts**, **sh**, **rout**, and **outputs** at [Tumor_Survival_CV]；
 3. allocate all relevant files into each subdirectory. The **rout**, and **outputs** folders will be empty at the beginning while the **scripts** and **sh** folders should look like the figure below:
 
 ![image](image1.png)
