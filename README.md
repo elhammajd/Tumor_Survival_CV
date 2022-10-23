@@ -28,7 +28,7 @@ all the final results/intermedia results are in the subdirectory directory at **
 ~~~
     [Tumor_Survival_CV]/Results  
 ~~~
-all the **data** from Schelker are stored at the directory bellow, which are accessible to all group members
+all the **data**  are stored at the directory bellow, which are accessible to group members
 ~~~
     [Tumor_Survival_CV]/Data 
 ~~~
