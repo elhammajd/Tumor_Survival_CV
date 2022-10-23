@@ -171,7 +171,7 @@ pip install pandas
 ~~~
 
 
-<details><summary>2.Main.py (12 hours)</summary>
+<details><summary>2. Main.py (12 hours)</summary>
 
 - running the seven CV techniques and Nested CV techniques using the merged dataframe reached from Dataset.sh;
 	
@@ -184,7 +184,7 @@ pip install pandas
 ~~~
 
 
-<details><summary>3.BestCutOff (20 min)</summary>
+<details><summary>3. BestCutOff (20 min)</summary>
 
 - reading the predcition outputs of models reached by running Main.sh;
 
@@ -197,7 +197,7 @@ pip install pandas
     sbatch ./sh/BestCutOff.sh
 ~~~
 
-<details><summary>4.Mean.py (20 min)</summary>
+<details><summary>4. Mean.py (20 min)</summary>
 
 - reading the Main.sh and BestCutOff.sh outputs;
 
@@ -210,7 +210,7 @@ pip install pandas
     sbatch ./sh/Mean.sh
 ~~~
 
-<details><summary>5.OS.py (30 min)</summary>
+<details><summary>5. OS.py (30 min)</summary>
 
 - reading the outputs from running Mean.sh and Main.sh;
 
