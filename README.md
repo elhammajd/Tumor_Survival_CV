@@ -171,7 +171,7 @@ pip install pandas
 ~~~
 
 
-<details><summary>2. Main.py (12 hours)</summary>
+<details><summary>2. Main.py (2 days and 11 hours)</summary>
 
 - running the seven CV techniques and Nested CV techniques using the merged dataframe reached from Dataset.sh;
 	
