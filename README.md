@@ -149,6 +149,8 @@ pip install pandas
 
 ## Running files (estimated time per job)
 
+Please run the following jobs in order.
+
 
 <details><summary>1. Datasets.py (20 min)</summary>
 
