@@ -165,12 +165,12 @@ pip install pandas
 
 ---
 
-## Running files (estimated time per job)
+## Running files
 
 Please run the following jobs in order.
 
 
-<details><summary>1. Datasets.py (20 min)</summary>
+<details><summary>1. Datasets.py</summary>
 
 - reading dataset downloaded from https://data.projectdatasphere.org/projectdatasphere/html/access;
 
@@ -191,7 +191,7 @@ Please run the following jobs in order.
 ~~~
 
 
-<details><summary>2. Main.py (2 days and 11 hours)</summary>
+<details><summary>2. Main.py</summary>
 
 - running the seven CV techniques and Nested CV techniques using the merged dataframe reached from Dataset.sh;
 	
@@ -204,7 +204,7 @@ Please run the following jobs in order.
 ~~~
 
 
-<details><summary>3. BestCutOff (20 min)</summary>
+<details><summary>3. BestCutOff</summary>
 
 - reading the predcition outputs of models reached by running Main.sh;
 
@@ -217,7 +217,7 @@ Please run the following jobs in order.
     sbatch ./sh/BestCutOff.sh
 ~~~
 
-<details><summary>4. Mean.py (20 min)</summary>
+<details><summary>4. Mean.py</summary>
 
 - reading the Main.sh and BestCutOff.sh outputs;
 
