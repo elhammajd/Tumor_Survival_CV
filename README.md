@@ -2,7 +2,10 @@
 ---
 ## About The Project
 
-This study confirms that the CV technique has significant impact on the accuracy of prediction probability of BOR. Thus, it is important to find and apply the optimal CV technique to build the predictive models. The results of this study shows, although, the datasets may have similar pre-processing, the same features, and data types but different size of data. The optimal CV technique to predict the probability of BOR is not the same. This study carried out to explore whether one specific CV technique can be get the most accurate predictions and segmentation of patients on clinical trials. In many previous studies, one specific CV technique was applied without explanations about the reasons of selection or testing other CV techniques. Using inappropriate CV technique can negative impact on the predictions and segmentations patients. It can be very vital in real clinical practice to predict the probability of clinical trials feature accurately. The results revealed that the best CV technique is uncertain in practice. Thus, it is important to try to consider the performance of different CV technique on clinical trials. In this study, a general model contains seven main CV techniques, in addition, the Nested CV technique were used to select the best prediction probability of BOR and segment the patients based on scores and best cut of that reached from the best performance of predictive models and then the CV technique were resulted in best performance were selected as the optimal CV technique. 
+Since clinical trials are costly and time-consuming, selecting an experimental treatment in the early stages is essential. Many machine learning methods can use early stages clinical outcomes to segment patients into two groups, responders and non-responders. Such classification models predict the probability of a patient being a responder. In this study, we propose a novel data-driven approach to select a better cutoff value based on the optimal cross-validation technique.
+To illustrate our novel method, we applied it to three clinical trial datasets of small-cell lung cancer patients. We used two different datasets to build a scoring system to segment patients. Then the models were applied to segment patients into the test data. 
+
+For more details please read the paper entiteled "Segmentation of patients with small cell lung cancer into responders and non-responders using the optimal cross-validation technique" and the original code in "https://github.com/elhammajd/Tumor_Survival_CV".
 
 ---
 ## Directory Layout
@@ -37,25 +40,21 @@ all the **data**  are stored at the directory bellow, which are accessible to gr
 
     ├── scripts  
     │ 	 ├── Datasets.py	                 # Making dataframes for building the predcitive models
-    │ 	 ├── Main.py 		                 # Main code calling the functions of predictive models outputs
+    │ 	 ├── Main_M1.py 		         # Main code calling the functions of predictive models outputs for the novel method
+    │ 	 ├── Main_M2.py 		         # Main code calling the functions of predictive models outputs for the standard method
     │ 	 ├── HouldOut.py	                 # Building predictive method by using HoldOut CV 
-    │ 	 ├── HouldOut_M2.py		         # Building predictive method by using Nested HoldOut CV  
     │ 	 ├── LOOCV.py			         # Building predictive method by using LOOCV CV   
-    │ 	 ├── LOOCV_M2.py		         # Building predictive method by using Nested LOOCV CV 
-    │ 	 ├── LpOCV.py			         # Building predictive method by using LpOCV CV  
-    │ 	 ├── LpOCV_M2.py		         # Building predictive method by using Nested LpOCV CV  
+    │ 	 ├── LpOCV.py			         # Building predictive method by using LpOCV CV   
     │ 	 ├── KFold.py			         # Building predictive method by KFold CV 
-    │ 	 ├── KFold_M2.py		         # Building predictive method by using Nested KFold CV 
     │ 	 ├── StratifiedKFold.py		         # Building predictive method by using StratifiedKFold CV 
-    │ 	 ├── StratifiedKFold_M2.py	         # Building predictive method by using Nested StratifiedKFold CV 
     │ 	 ├── RepeatedKFold.py		         # Building predictive method by using RepeatedKFold CV  
-    │ 	 ├── RepeatedKFold_M2.py	         # Building predictive method by using Nested RepeatedKFold CV 
     │ 	 ├── RepeatedStratifiedKFold.py		 # Building predictive method by using RepeatedStratifiedKFold CV 
-    │ 	 ├── RepeatedStratifiedKFold_M2.py	 # Building predictive method by using Nested RepeatedStratifiedKFold CV 
-    │ 	 ├── Outputs.py			         # The functions for saving the results of predictive models in csv files 
-    │ 	 ├── Select_Best_Cutoff.py		 # Selecting the best predictive models along with their best cut offs
+    │ 	 ├── BestCutoff_M1.py		         # Selecting the best predictive models along with their best cut offs
     │ 	 ├── Mean.py		                 # Calculating the mean of coefficient of features from selected predictive models
-    │ 	 └── OS.py			         # Computing Kaplan-Meier Curve according to selected predictive models				
+    │ 	 ├── Outputs_M1.py	         	 # Saving the results of predictive models in csv files for the novel method
+    │ 	 ├── Outputs_M2.py		         #  Saving the results of predictive models in csv files for the standard method
+    │ 	 ├── OS_M1.py		                 # Computing Kaplan-Meier, CPH, and AFT according to the novel method	
+    │ 	 └── OS_M2.py			         # Computing Kaplan-Meier, CPH, and AFT according to the standard method					
 </details>
 <details><summary>sh</summary>
     
@@ -70,38 +69,57 @@ all the **data**  are stored at the directory bellow, which are accessible to gr
 <details><summary>rout</summary>
         
     ├── rout  
-    │ 	 ├── Dataset.sh		# log.file from Dataset.sh
-    │ 	 ├── Main.sh		# log.file from Main.sh
-    │ 	 ├── BestCutOff.sh	# log.file from BestCutOff.sh
-    │ 	 ├── Mean.sh		# log.file from Mean.sh
-    │ 	 └── OS.sh		# log.file from OS.sh	
+    │ 	 ├── Dataset.out		# log.file from Dataset.sh
+    │ 	 ├── Main.out		# log.file from Main.sh
+    │ 	 ├── BestCutOff.out	# log.file from BestCutOff.sh
+    │ 	 ├── Mean.out		# log.file from Mean.sh
+    │ 	 └── OS.out		# log.file from OS.sh; **Summary of CPH and AFT model for the novel and the standar model can be found in OS.out**	
 	
 </details>
 <details><summary>outputs (final & intermedia results)</summary>
 
     ├──  intermedia result
-    │ 	 ├── Coefs_NCT02499770.csv	        # Coefficient of each feature for each predictive model on NCT02499770 
-    │ 	 ├── Coefs_NCT02514447.csv	        # Coefficient of each feature for each predictive model on NCT02514447
-    │ 	 ├── Coefs_NCT03041311.csv	        # Coefficient of each feature for each predictive model on NCT03041311
-    │ 	 ├── Best_Cutoff_NCT02499770.csv	# Best cut offs of predictive models for NCT02499770
-    │ 	 ├── Best_Cutoff_NCT02514447.csv	# Best cut offs of predictive models for NCT02514447
-    │ 	 ├── Best_Cutoff_NCT03041311.csv	# Best cut offs of predictive models for NCT03041311
+    │ 	 ├── M1_Coefs_NCT02499770.csv	        # Coefficient of each feature for each predictive model on NCT02499770 in the novel model
+    │ 	 ├── M1_Coefs_NCT02514447.csv	        # Coefficient of each feature for each predictive model on NCT02514447 in the novel model
+    │ 	 ├── M1_Coefs_NCT03041311.csv	        # Coefficient of each feature for each predictive model on NCT03041311 in the novel model
+    │ 	 ├── M2_Coefs_NCT02499770.csv	        # Coefficient of each feature for each predictive model on NCT02499770 in the standard model
+    │ 	 ├── M2_Coefs_NCT02514447.csv	        # Coefficient of each feature for each predictive model on NCT02514447 in the standard model
+    │ 	 ├── M2_Coefs_NCT03041311.csv	        # Coefficient of each feature for each predictive model on NCT03041311 in the standard model
+    │ 	 ├── Best_Cutoff_NCT02499770.csv	# Best cut offs of predictive models for NCT02499770 in the novel model
+    │ 	 ├── Best_Cutoff_NCT02514447.csv	# Best cut offs of predictive models for NCT02514447 in the novel model
+    │ 	 ├── Best_Cutoff_NCT03041311.csv	# Best cut offs of predictive models for NCT03041311 in the novel model
     ├──  final result     
-    │ 	 ├── Performance_NCT02499770.csv	# Performance of predictive models for NCT02499770
-    │ 	 ├── Performance_NCT02514447.csv	# Performance of predictive models for NCT02514447
-    │ 	 ├── Performance_NCT03041311.csv	# Performance of predictive models for NCT03041311
-    │ 	 ├── Result_NCT02499770.csv	        # Result of predictive models for NCT02499770
-    │ 	 ├── Result_NCT02514447.csv             # Result of predictive models for NCT02514447
-    │ 	 ├── Result_NCT03041311.csv	        # Result of predictive models for NCT03041311
-    │ 	 ├── Summary_NCT02499770.csv	        # Summary of predictive models for NCT02499770
-    │ 	 ├── Summary_NCT02514447.csv	        # Summary of predictive models for NCT02514447
-    │ 	 ├── Summary_NCT03041311.csv	        # Summary of predictive models for NCT03041311
-    │ 	 ├── Confusion_Matrix_NCT02499770.csv	# Confusion Matrix of predictive models for NCT02499770
-    │ 	 ├── Confusion_Matrix_NCT02514447.csv	# Confusion Matrix of predictive models for NCT02514447
-    │ 	 ├── Confusion_Matrix_NCT03041311.csv	# Confusion Matrix of predictive models for NCT03041311
-    │ 	 ├── Time_NCT02499770.csv	        # Time of running predictive models for NCT02499770
-    │ 	 ├── Time_NCT02514447.csv	        # Time of running predictive models for NCT02514447
-    │ 	 └── Time_NCT03041311.csv	        # Time of running predictive models for NCT03041311
+    │ 	 ├── M1_Performance_NCT02499770.csv	# Performance of predictive models for NCT02499770 in the novel model
+    │ 	 ├── M1_Performance_NCT02514447.csv	# Performance of predictive models for NCT02514447 in the novel model
+    │ 	 ├── M1_Performance_NCT03041311.csv	# Performance of predictive models for NCT03041311 in the novel model
+    │ 	 ├── M2_Performance_NCT02499770.csv	# Performance of predictive models for NCT02499770 in the standard model
+    │ 	 ├── M2_Performance_NCT02514447.csv	# Performance of predictive models for NCT02514447 in the standard model
+    │ 	 ├── M2_Performance_NCT03041311.csv	# Performance of predictive models for NCT03041311 in the standard model
+    │ 	 ├── M1_Probability_NCT02499770.csv	# Probability of predictive models for NCT02499770 in the novel model
+    │ 	 ├── M1_Probability_NCT02514447.csv     # Probability of predictive models for NCT02514447 in the novel model
+    │ 	 ├── M1_Probability_NCT03041311.csv	# Probability of predictive models for NCT03041311 in the novel model
+    │ 	 ├── M2_Probability_NCT02499770.csv	# Probability of predictive models for NCT02499770 in the standard model
+    │ 	 ├── M2_Probability_NCT02514447.csv	# Probability of predictive models for NCT02514447 in the standard model
+    │ 	 ├── M2_Probability_NCT03041311.csv	# Probability of predictive models for NCT03041311 in the standard model
+    │ 	 ├── M1_Pearson_residuals_NCT02499770.csv	# Pearson residuals of predictive models for NCT02499770 in the novel model
+    │ 	 ├── M1_Pearson_residuals_NCT02514447.csv	# Pearson residuals of predictive models for NCT02514447 in the novel model
+    │ 	 ├── M1_Pearson_residuals_NCT03041311.csv	# Pearson residuals of predictive models for NCT03041311 in the novel model
+    │ 	 ├── M2_Pearson_residuals_NCT02499770.csv	# Pearson residuals of running predictive models for NCT02499770 in the standard model
+    │ 	 ├── M2_Pearson_residuals_NCT02514447.csv	# Pearson residuals of running predictive models for NCT02514447 in the standard model
+    │ 	 ├── M2_Pearson_residuals_NCT03041311.csv	# Pearson residuals of running predictive models for NCT03041311 in the standard model
+    │ 	 ├── M1_OS_Bestcut_NCT03041311.csv	# Kaplan Meier for NCT03041311 in the novel model
+    │ 	 ├── M1_OS_Bestcut_NCT02499770.csv	# Kaplan Meier for NCT02499770 in the novel model
+    │ 	 ├── M1_OS_Bestcut_NCT02514447.csv	# Kaplan Meier for NCT02514447 in the novel model
+    │ 	 ├── M2_OS_Bestcut_NCT03041311.csv	# Kaplan Meier for NCT03041311 in the standard model
+    │ 	 ├── M2_OS_Bestcut_NCT02499770.csv	# Kaplan Meier for NCT02499770 in the standard model
+    │ 	 ├── M2_OS_Bestcut_NCT02514447.csv	# Kaplan Meier for NCT02514447 in the standard model
+    │ 	 ├── M1_WeibullAFT_NCT02499770.csv	# AFT model for NCT02499770 in the novel model
+    │ 	 ├── M1_WeibullAFT_NCT02514447.csv	# AFT model for NCT02514447 in the novel model
+    │ 	 ├── M1_WeibullAFT_NCT03041311.csv	# AFT model for NCT03041311 in the novel model
+    │ 	 ├── M2_WeibullAFT_NCT02499770.csv	# AFT model for NCT02499770 in the standard model
+    │ 	 ├── M2_WeibullAFT_NCT02514447.csv	# AFT model for NCT02514447 in the standard model
+    │ 	 └── M2_WeibullAFT_NCT03041311.csv	# AFT model for NCT03041311 in the standard model
+    
 </details>
 <details><summary>data</summary>
 	    
