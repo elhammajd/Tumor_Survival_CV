@@ -11,6 +11,8 @@
 #SBATCH --ntasks=6  
 #SBATCH --mem-per-cpu=16G # 2GiB of memery 
 #SBATCH -t 00-01:00
-python -u ./Scripts/OS.py
+python -u ./Scripts/OS_M1.py;
+python -u ./Scripts/OS_M2.py
+
 
 

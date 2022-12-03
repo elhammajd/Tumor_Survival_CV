@@ -11,6 +11,6 @@
 #SBATCH --ntasks=6  
 #SBATCH --mem-per-cpu=16G # 2GiB of memery 
 #SBATCH -t 00-01:00
-python -u ./Scripts/Select_Best_Cutoff.py
+python -u ./Scripts/BestCutoff_M1.py
 
 
