@@ -10,7 +10,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --ntasks=6  
 #SBATCH --mem-per-cpu=16G # 2GiB of memery 
-#SBATCH -t 00-01:00
+#SBATCH -t 00-00:50
 python -u ./Scripts/Datasets.py
 
 
